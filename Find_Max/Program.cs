@@ -10,8 +10,8 @@ namespace Find_Max
     {
         public static void Main(string[] args)
         {
-            FindMaximum findMaximum = new FindMaximum();
             Console.WriteLine("1 - Given 3 Integers, find the maximum");
+            Console.WriteLine("2 - Given 3 Floats, find the maximum");
             Console.WriteLine("8 - Exit");
 
             Console.Write("Enter your choice: ");
@@ -21,6 +21,9 @@ namespace Find_Max
             {
                 case 1:
                     FindMax<int>(3, 7, 1);
+                    break;
+                case 2:
+                    FindMax<float>(3.5f, 7.2f, 1.3f);
                     break;
                 default:
                     Console.WriteLine("Invalid input");
